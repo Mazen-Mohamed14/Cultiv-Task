@@ -129,6 +129,7 @@
   font-weight: 600;
   line-height: 3.125rem;
   text-transform: capitalize;
+  text-decoration: none;
 }
 .card-btn:hover {
   background-color: #1e1e1e;
