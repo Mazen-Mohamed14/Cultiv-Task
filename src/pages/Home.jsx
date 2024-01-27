@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className="album py-5 mt-4 home-background">
-      <div className="container">
+      <div className="grid-container">
         <div className="row mx-auto row-cols-lg-2 row-cols-xl-3 g-5">
           {posts?.blogs?.map((post) => {
             return (
