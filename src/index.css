@@ -46,6 +46,10 @@
   width: 100vw;
 }
 
+.grid-container {
+  padding-left: 1.5rem;
+}
+
 .post-card {
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   background-color: #f3f3f3;
@@ -115,7 +119,6 @@
   border-radius: 0.5rem;
   border: 2px solid #1e1e1e;
   display: flex;
-  width: 7.5rem;
   min-width: fit-content;
   height: 1.875rem;
   padding: 0.125rem 0.9375rem;
