@@ -17,11 +17,9 @@ export const Post = (props) => {
           <p className="card-desc">{props.desc}</p>
           <p className="card-text">{props.text}</p>
           <div className="d-flex justify-content-between align-items-center btn-container">
-            <div className="btn-group">
-              <Link className="card-btn" to={`blogs/${props.id}`}>
-                Read More
-              </Link>
-            </div>
+            <Link className="card-btn" to={`blogs/${props.id}`}>
+              Read More
+            </Link>
           </div>
         </div>
       </div>
