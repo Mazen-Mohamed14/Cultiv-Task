@@ -1,8 +1,13 @@
-import { useState } from "react";
-import "./App.css";
+import { Outlet } from "react-router-dom";
+import { Navbar } from "./components/Navbar.jsx";
 
 function App() {
-  return <h1> Hmada</h1>;
+  return (
+    <div className="overflow-x-hidden">
+      <Navbar></Navbar>
+      <Outlet></Outlet>
+    </div>
+  );
 }
 
 export default App;
