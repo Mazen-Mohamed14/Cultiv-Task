@@ -1,17 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Blog from "./pages/Blog.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import Home from "./pages/Home.jsx";
+import { Login } from "./pages/Login.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
-      { path: "/home", element: <App /> },
-      { path: "/login", element: <div></div> },
-      { path: "/blogpost", element: <div></div> },
+      { path: "/", element: <Home /> },
+      { path: "/login", element: <Login /> },
+      { path: "/blogs/:blogpostId", element: <Blog /> },
     ],
   },
 ]);
