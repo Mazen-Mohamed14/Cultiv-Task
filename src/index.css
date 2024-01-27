@@ -116,6 +116,7 @@
   border: 2px solid #1e1e1e;
   display: flex;
   width: 7.5rem;
+  min-width: fit-content;
   height: 1.875rem;
   padding: 0.125rem 0.9375rem;
   justify-content: center;
