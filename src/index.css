@@ -75,6 +75,11 @@
   position: relative;
 }
 
+.card-body:hover {
+  background-color: #89c5cccc;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
 .card hr {
   background-color: #302d2d;
   width: 25rem;
